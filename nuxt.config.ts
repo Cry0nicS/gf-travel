@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     future: {
         compatibilityVersion: 4
     },
-    modules: ["@nuxt/eslint"],
+    modules: ["@nuxt/eslint", "@nuxtjs/tailwindcss"],
     ssr: true, // Used by modules like nuxt-image for static image generation
     typescript: {
         typeCheck: true
