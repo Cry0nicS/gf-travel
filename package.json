@@ -3,6 +3,7 @@
     "type": "module",
     "scripts": {
         "build": "nuxt build",
+        "clean": "npx nuxi cleanup && rm -rf node_modules/ && rm -rf .nuxt/ && rm package-lock.json",
         "dev": "nuxt dev",
         "format": "prettier --write **/*.{js,json,jsx,scss,ts,tsx,vue}",
         "format-check": "prettier --check \"**/*.{html,js,json,jsx,scss,ts,tsx,vue,scss}\"",

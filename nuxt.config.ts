@@ -7,6 +7,9 @@ export default defineNuxtConfig({
             standalone: false // <--- Required for Antfu ESLint config
         }
     },
+    future: {
+        compatibilityVersion: 4
+    },
     modules: ["@nuxt/eslint"],
     ssr: true, // Used by modules like nuxt-image for static image generation
     typescript: {

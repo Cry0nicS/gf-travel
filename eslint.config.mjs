@@ -56,7 +56,7 @@ export default withNuxt(
             // Force nuxt.config.ts to have sorted keys alphabetically.
             files: ["nuxt.config.ts"],
             rules: {
-                "sort-keys": ["error", "asc", { caseSensitive: false, natural: true }]
+                "sort-keys": ["error", "asc", {caseSensitive: false, natural: true}]
             }
         }
     )
