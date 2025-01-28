@@ -1,0 +1,28 @@
+{
+    "name": "gluten-free-travel",
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "format": "prettier --write **/*.{js,json,jsx,scss,ts,tsx,vue}",
+        "format-check": "prettier --check \"**/*.{html,js,json,jsx,scss,ts,tsx,vue,scss}\"",
+        "generate": "nuxt generate",
+        "lint": "eslint .",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@antfu/eslint-config": "^4.1.0",
+        "@nuxt/eslint": "^0.7.5",
+        "eslint": "^9.19.0",
+        "nuxt": "^3.15.3",
+        "vue": "latest",
+        "vue-router": "latest"
+    },
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "typescript": "^5.7.3",
+        "vue-tsc": "^2.1.10"
+    }
+}
