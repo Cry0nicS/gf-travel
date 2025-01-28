@@ -1,74 +1,67 @@
 # gf-travel
 A small blog about the adventures of a celiac person traveling the world
 
-## Setup
+## Installation
 
-Make sure to install dependencies:
+To install npm packages run the following commands
 
-```bash
-# npm
-npm install
+-   Run `npm install` to install the project dependencies.
 
-# pnpm
-pnpm install
+### Run the development server:
 
-# yarn
-yarn install
+-   Run `npm run dev` or `nuxt dev` to start the development server.
+    -   Open http://localhost:3000/
 
-# bun
-bun install
-```
+## Linting
 
-## Development Server
+-   `npm run format-check` - checks for formatting errors.
+-   `npm run format` - auto-formats all files.
+-   `npm run lint` - checks for Typescript errors.
+-   `npm run spell-check` - checks for spelling errors (EN or DE).
+-   `npm run type-check` - checks for Typescript types.
 
-Start the development server on `http://localhost:3000`:
+### Spell-checking
 
-```bash
-# npm
-npm run dev
+CSpell is a library used for spell checking the code. It checks against English and some technical dictionaries (e.g. Typescript).
 
-# pnpm
-pnpm dev
+Custom words, that we consider correct, but are not part of any dictionary in use are added to a custom file - `custom.dic`.
 
-# yarn
-yarn dev
+Please keep all words in the `custom.dic` file sorted in alphabetical order, lower case. One word per line.
 
-# bun
-bun run dev
-```
+### Committing
 
-## Production
+There is a "linter" check running before each commit. All the above standards must be respected, in order to commit.
 
-Build the application for production:
+## Troubleshooting
+
+On rare occasions, you might encounter an error related to `.nuxt` folder. <br />
+Such an example is missing a specific property in `nuxt.config.ts` after installing a new nuxt module.
+
+To fix this, manually run:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+nuxt prepare
 ```
 
-Locally preview production build:
+Although this should not be necessary because `nuxt prepare` is run automatically after `npm install` (see `postinstall` script)
 
-```bash
-# npm
-npm run preview
+## How to update dependencies
 
-# pnpm
-pnpm preview
+### Minor version updates
 
-# yarn
-yarn preview
+Update packages to the latest safe version as follows:
 
-# bun
-bun run preview
-```
+1. Run `npm outdated` to check for outdated packages.
+2. Run `npm update` to update _all_ the outdated packages.
+    - If you want to update _only_ a specific package, run `npm update <package-name>`.
+3. Run `npm outdated` again to check if there are still outdated packages.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Major version updates
+
+Major version updates should be done with caution, as they may introduce breaking changes.
+
+You can do so by using the `@latest`. e.g. `npm install <packagename>@latest`
+
+### Alternative
+
+As an alternative, you can also use [npm-check-updates](https://github.com/raineorshine/npm-check-updates).
