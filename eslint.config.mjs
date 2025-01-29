@@ -9,7 +9,7 @@ export default withNuxt(
             vue: true,
             lessOpinionated: true,
             jsonc: true,
-            ignores: ["app/components/ui/**", "public/**"]
+            ignores: ["app/components/ui/**", "public/**", ".coderabbit.yaml"]
         },
         {
             files: ["**/*.vue"],
