@@ -6,7 +6,6 @@ const config: Config = {
     content: ["./app/**/*.{js,vue,ts}"],
     safelist: ["dark"],
     prefix: "",
-
     theme: {
         container: {
             center: true,
