@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: true
+reviews:
+    path_filters:
+        - "!**/*.xml"
+        - "!**/*.yaml"
+        - "!app/components/ui/**"
+        - "!custom.dic"
