@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    colorMode: {
+        classSuffix: "",
+        fallback: "dark",
+        preference: "system"
+    },
     compatibilityDate: "2024-11-01",
+    css: ["./app/assets/main.css"],
     devtools: {enabled: true},
     eslint: {
         config: {
@@ -22,6 +28,11 @@ export default defineNuxtConfig({
         prefix: ""
     },
     ssr: true, // Used by modules like nuxt-image for static image generation
+    tailwindcss: {
+        cssPath: ["./app/assets/main.css", {injectPosition: "last"}],
+        editorSupport: true,
+        exposeConfig: true
+    },
     typescript: {
         typeCheck: true
     }
