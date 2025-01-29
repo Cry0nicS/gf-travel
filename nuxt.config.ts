@@ -16,7 +16,13 @@ export default defineNuxtConfig({
     future: {
         compatibilityVersion: 4
     },
-    modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxt/eslint", "@nuxtjs/color-mode"],
+    modules: [
+        "@nuxt/eslint",
+        "@nuxt/icon",
+        "@nuxtjs/color-mode",
+        "@nuxtjs/tailwindcss",
+        "shadcn-nuxt"
+    ],
     shadcn: {
         /**
          * Directory that the component lives in.
