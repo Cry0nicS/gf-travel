@@ -3,7 +3,7 @@ import animatePlugin from "tailwindcss-animate";
 
 const config: Config = {
     darkMode: ["class"],
-    content: ["./app/**/*.{js,vue,ts}"],
+    content: ["./app/**/*.{js,vue,ts,html,md}"],
     safelist: ["dark"],
     prefix: "",
     theme: {
@@ -55,6 +55,9 @@ const config: Config = {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)"
+            },
+            transitionDuration: {
+                radius: "200ms"
             },
             keyframes: {
                 "accordion-down": {
